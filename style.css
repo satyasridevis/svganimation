@@ -9,17 +9,10 @@
 {
     width: 500px;
     margin: auto;
-    padding: 24px;
+    
     height: 500px;
-    box-shadow:
-  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-  0 12.5px 10px rgba(0, 0, 0, 0.06),
-  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-  0 100px 80px rgba(0, 0, 0, 0.12)
-;
-border-radius: 90px;
+   
+
 }
 .svg-container svg
 
@@ -59,13 +52,13 @@ border-radius: 90px;
     0%
     {
         transform: translateY(20px);
-        fill:#008aff;
+        
         
     }
     100%
     {
         transform: translateY(-100px);
-        fill:#ff137d;
+    
 
     }
 }
@@ -140,8 +133,8 @@ footer
     font-size: 1.1rem;
     letter-spacing: 1px;
     line-height: 1.3;
-    color: white;
-    background: #26272b;
+    color:#26272b;
+    
     position:fixed;
     bottom: 0;
     
@@ -160,6 +153,112 @@ a
 {
     color: #008aff;
 }
+
+
+
+
+#bguniverse
+{
+    animation: bgcolor 1.3s infinite alternate;
+}
+@keyframes bgcolor
+{
+    0%
+    {
+        fill:#6C63FF;
+    }
+    100%
+    {
+        fill:#2F2E41;
+    }
+}
+
+#planet
+{
+    animation: planetupdown 1.3s infinite alternate;
+
+}
+
+
+@keyframes planetupdown
+{
+    from
+    {
+        transform: translateY(20px);
+        transform: rotate(5deg);
+    }
+    to 
+    {
+        transform: translateY(-100px);
+    }
+}
+
+#flyflag, #flag
+{
+    animation: fly 1.3s infinite alternate;
+}
+
+@keyframes fly
+{
+    from
+    {
+        transform: translateY(0);
+    }
+    to 
+    {
+        transform: translateY(20px);
+    }
+}
+
+#floor 
+{
+    animation: flyfloor 1.3s infinite;
+    
+}
+
+@keyframes flyfloor
+{
+    0%
+    {
+        background-color:#008aff;
+    }
+    100%
+    {
+        background-color:#2F2E41;
+    }
+}
+
+#clouds
+{
+    position: relative;
+    animation: moveclouds 5s infinite alternate;
+}
+
+@keyframes moveclouds
+{
+    0%
+    {
+        transform: translateX(0);
+    }
+    100%
+    {
+        transform: translateX(100%);
+    }
+    0%
+    {
+        transform: translateX(0);
+    }
+}
+
+
+.svgfour
+{
+    position: relative;
+    top: 200px;
+    right: 50px;
+}
+
+
 
 @media screen and (max-width : 600px)
 {
