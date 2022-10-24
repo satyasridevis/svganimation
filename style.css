@@ -277,16 +277,10 @@ a
      footer
      {
          font-size: 0.6rem;
-         position: fixed;
+         position: absolute;
+         bottom:0
 
      }
-     footer div
-     {
-         
-         position: relative;
-         left: 100px;
-         top: 10PX;
-         
-         
-     }
+     
+    
 }
